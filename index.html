@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<style>
+
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				background-color: black !important;
+			}
+
+			.it-bg {
+				position: absolute;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: black;
+
+				width:	100vw;
+				height: 100vh;
+
+
+				background-image: url('https://images.alphacoders.com/787/thumb-1920-787294.png');
+			}
+
+			.em-balloon {
+				width: 150px;
+			    height: 300px;
+			    background-size: 200%;
+			    background-position: 234px 0px;
+			}
+
+			.fade-in-slowly {
+				opacity: 0;
+				-webkit-animation:fadeInSlowly ease-in infinite;
+				-moz-animation:fadeInSlowly ease-in infinite;
+				animation:fadeInSlowly ease-in infinite;
+
+				-webkit-animation-fill-mode:forwards;
+				-moz-animation-fill-mode:forwards;
+				animation-fill-mode:forwards;
+
+				-webkit-animation-duration:10s;
+				-moz-animation-duration:10s;
+				animation-duration:10s;
+			}
+
+			.fade-out-slowly {
+				opacity:1;
+				-webkit-animation:fadeOutSlowly ease-out infinite;
+				-moz-animation:fadeOutSlowly ease-out infinite;
+				animation:fadeOutSlowly ease-out infinite;
+
+				-webkit-animation-fill-mode:forwards;
+				-moz-animation-fill-mode:forwards;
+				animation-fill-mode:forwards;
+
+				-webkit-animation-duration:10s;
+				-moz-animation-duration:10s;
+				animation-duration:10s;
+			}
+
+			@-moz-keyframes fadeOutSlowly { 0% { opacity:1; } 50% { opacity: 0 } 100% { opacity:1; } }
+			@keyframes fadeOutSlowly { 0% { opacity:1; } 50% { opacity: 0 } 100% { opacity:1; } }
+
+			@-moz-keyframes fadeInSlowly { 0% { opacity: 0; } 50%{ opacity: 100 } 100% { opacity: 0; } }
+			@keyframes fadeInSlowly { 0% { opacity: 0; } 50%{ opacity: 100 } 100% { opacity: 0; } }
+
+		</style>
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="it-bg it-bg fade-in-slowly"></div>
+
+		<i class="em-balloon fade-out-slowly" />
+	</body>
+
+</html>
