@@ -19,6 +19,7 @@ body {
 
 
 	background-image: url('../images/it-bg.png');
+	background-repeat: no-repeat;
 }
 
 .em-balloon {
